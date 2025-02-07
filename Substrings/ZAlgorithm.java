@@ -39,7 +39,7 @@ public class ZAlgorithm {
         int n = s.length();
         int[] z = new int[n];        
         for (int i = 0; i < n; i++) {
-            while (i + z[i] < n && s.charAt(i) == s.charAt(i+z[i])) {
+            while (i + z[i] < n && s.charAt(z[i]) == s.charAt(i+z[i])) {
                 z[i]++;
             }
         }
